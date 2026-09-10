@@ -1,8 +1,11 @@
 import express from "express";
 import { signup, login, logout, updateProfile } from "../controllers/authControllers.js";
 import { protectRoute } from "../middlewares/authMiddlewares.js";
+import { arcjetProtection } from "../middlewares/arcjetMiddlewares.js";
 
 const router = express.Router();
+
+router.use(arcjetProtection);
 
 router.post("/signup",signup)
 router.post("/login",login)
