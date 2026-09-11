@@ -2,6 +2,7 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import path from "path";
+import cors from "cors"
 
 import authRoutes from "./routes/authRoutes.js";
 import messageRoutes from "./routes/messageRoutes.js";
@@ -16,6 +17,7 @@ const __dirname = path.resolve();
 const PORT = ENV.PORT || 3000;
 
 app.use(express.json());//req.body
+app.use(cors({origin:ENV.CLIENT_URL,credentials: true}));
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
