@@ -1,4 +1,3 @@
-import React from 'react'
 import { LoaderIcon } from "lucide-react";
 function PageLoader() {
   return (
@@ -7,5 +6,4 @@ function PageLoader() {
     </div>
   );
 }
-
-export default PageLoader
+export default PageLoader;
