@@ -212,7 +212,7 @@ Chat-App/
 
 ---
 
-## 🧠 Key Technical Challenges Solved (Placement / Interview Q&A)
+## 🧠 Key Technical Challenges Solved 
 
 1. **Socket Handshake Authentication**:
    - *Challenge*: Protecting WebSockets against unauthorized connections without transmitting raw tokens in plaintext URL parameters.
@@ -235,10 +235,6 @@ Feel free to check out the [Issues Page](https://github.com/shivanshu360/Chat-Ap
 
 ---
 
-## 📜 License
 
-This project is licensed under the **ISC License**.
 
----
 
-⭐ **If you found this project helpful for your placements or learning, give it a star on GitHub!**
